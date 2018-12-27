@@ -4,9 +4,17 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>AppIcon60x60@2x.png</key>
+		<data>
+		c2Y52Fh0iNNW34f7le4fQ4C+3a8=
+		</data>
+		<key>Assets.car</key>
+		<data>
+		9WAhIyOBPFCemZU/TK1GsVT+tz4=
+		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		flPoZh+8rxGYQv0mIlEIJSayD+4=
+		KlhT4iOh5YexrwEElYR6nM+ksXM=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -14,11 +22,11 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		teE5gI7AFiX52SVC+9z8o2+K+yI=
+		FdM4lVCEjn5OVkQY+BBr2yvRhBg=
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		zizoItbs0nqwmSnzUWjiGq8u++4=
+		EOZiwjOGAWiXDdNWJvZXL4qNaqw=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -26,11 +34,11 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
 		<data>
-		RNSQAgYOoJCoTSw6/OG7onQYeqQ=
+		OnY5Co7sMtQSs0UBGJWP/z+MhjI=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		hQltc6czEbL3F09NIlPGRTUbhRU=
+		8mKv26K1ogFwhm1imYDAbPZoiWs=
 		</data>
 		<key>LocalBookForSelf.momd/LocalBookForSelf.mom</key>
 		<data>
@@ -168,11 +176,25 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>AppIcon60x60@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			a0OeDdbS02NoZKsy1MTmcinQNlhxkr5L7XjNM84asFQ=
+			</data>
+		</dict>
+		<key>Assets.car</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fwI/32WNjJcQWrbqHq101H7JYns//dnPmm2DSnktpO0=
+			</data>
+		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			g2xY8vFmGcxA1YHHbgy47jrJBFGCK9piLjy7Ck8W9LQ=
+			fsreSz65YJh8PxJ8cjgNd2dBWMrH5qAqmXVuvIoYSBw=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -186,14 +208,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/a5L1trqdQpXaj1pyKLgDFYcfN5Xn7PcmMHA46UUNSE=
+			z0r9tYcSgPaQ3VWMnNr9UTNeuFfQE6O5ktXKVivP0go=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			m1YkFkGcdMxeWiKZ5xk2D5uowUXUPU9bKNTj3vZ80n0=
+			fAbdZsXMWJHpgtxCIzletfKRw7pMI3IzA50A2pgRJyA=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -207,7 +229,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eZ7o0J+w1MbCehJM192FGtwq4gg/79o/y6Xu4LQkqFA=
+			s6ubt9AxnL52QGg8RpVcapfPDLXNKw82wSK1m1hHACk=
 			</data>
 		</dict>
 		<key>LocalBookForSelf.momd/LocalBookForSelf.mom</key>

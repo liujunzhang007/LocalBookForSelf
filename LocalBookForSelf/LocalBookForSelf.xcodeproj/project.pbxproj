@@ -15,8 +15,11 @@
 		4248D0E521D4D25E00B5E217 /* RNDecryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4248D0E121D4D25E00B5E217 /* RNDecryptor.m */; };
 		4248D0E621D4D25E00B5E217 /* RNEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4248D0E221D4D25E00B5E217 /* RNEncryptor.m */; };
 		4248D0E721D4D25E00B5E217 /* RNCryptorEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4248D0E321D4D25E00B5E217 /* RNCryptorEngine.m */; };
+		4248D0F421D4DBD000B5E217 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4248D0F321D4DBD000B5E217 /* BaseViewController.m */; };
+		4248D0F821D4DC3600B5E217 /* LeonMainPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4248D0F721D4DC3600B5E217 /* LeonMainPageVC.m */; };
+		4248D0FB21D4DC5C00B5E217 /* LeonSettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4248D0FA21D4DC5C00B5E217 /* LeonSettingVC.m */; };
 		4264894121D48D4C00D00443 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4264894021D48D4C00D00443 /* AppDelegate.m */; };
-		4264894421D48D4C00D00443 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4264894321D48D4C00D00443 /* ViewController.m */; };
+		4264894421D48D4C00D00443 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4264894321D48D4C00D00443 /* RootViewController.m */; };
 		4264894721D48D4C00D00443 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4264894521D48D4C00D00443 /* Main.storyboard */; };
 		4264894A21D48D4C00D00443 /* LocalBookForSelf.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4264894821D48D4C00D00443 /* LocalBookForSelf.xcdatamodeld */; };
 		4264894C21D48D4E00D00443 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4264894B21D48D4E00D00443 /* Assets.xcassets */; };
@@ -53,11 +56,17 @@
 		4248D0E921D4D32100B5E217 /* RNCryptor iOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNCryptor iOS.h"; sourceTree = "<group>"; };
 		4248D0EA21D4D32100B5E217 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		4248D0EB21D4D32100B5E217 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4248D0F221D4DBD000B5E217 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		4248D0F321D4DBD000B5E217 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		4248D0F621D4DC3600B5E217 /* LeonMainPageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeonMainPageVC.h; sourceTree = "<group>"; };
+		4248D0F721D4DC3600B5E217 /* LeonMainPageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeonMainPageVC.m; sourceTree = "<group>"; };
+		4248D0F921D4DC5C00B5E217 /* LeonSettingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeonSettingVC.h; sourceTree = "<group>"; };
+		4248D0FA21D4DC5C00B5E217 /* LeonSettingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeonSettingVC.m; sourceTree = "<group>"; };
 		4264893C21D48D4C00D00443 /* LocalBookForSelf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalBookForSelf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4264893F21D48D4C00D00443 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4264894021D48D4C00D00443 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4264894221D48D4C00D00443 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4264894321D48D4C00D00443 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4264894221D48D4C00D00443 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		4264894321D48D4C00D00443 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		4264894621D48D4C00D00443 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4264894921D48D4C00D00443 /* LocalBookForSelf.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LocalBookForSelf.xcdatamodel; sourceTree = "<group>"; };
 		4264894B21D48D4E00D00443 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -82,6 +91,9 @@
 			isa = PBXGroup;
 			children = (
 				4248D09F21D4C3E400B5E217 /* LJZ-PrefixHeader.pch */,
+				4264894B21D48D4E00D00443 /* Assets.xcassets */,
+				4264894D21D48D4E00D00443 /* LaunchScreen.storyboard */,
+				4264894521D48D4C00D00443 /* Main.storyboard */,
 				4248D0B021D4CA3E00B5E217 /* Localized.strings */,
 				4248D0BC21D4CB3500B5E217 /* InfoPlist.strings */,
 				4248D0C321D4CB7100B5E217 /* Localizable.stringsdict */,
@@ -133,10 +145,57 @@
 			path = "RNCryptor iOS";
 			sourceTree = "<group>";
 		};
+		4248D0ED21D4D85700B5E217 /* Coredata */ = {
+			isa = PBXGroup;
+			children = (
+				4264894821D48D4C00D00443 /* LocalBookForSelf.xcdatamodeld */,
+			);
+			path = Coredata;
+			sourceTree = "<group>";
+		};
+		4248D0EF21D4DAF400B5E217 /* Coding */ = {
+			isa = PBXGroup;
+			children = (
+				4248D0F521D4DBE100B5E217 /* MVC-Class */,
+				4248D0F121D4DB2F00B5E217 /* CommonClass */,
+				4248D0F021D4DB2500B5E217 /* BaseClass */,
+			);
+			path = Coding;
+			sourceTree = "<group>";
+		};
+		4248D0F021D4DB2500B5E217 /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				4248D0F221D4DBD000B5E217 /* BaseViewController.h */,
+				4248D0F321D4DBD000B5E217 /* BaseViewController.m */,
+			);
+			path = BaseClass;
+			sourceTree = "<group>";
+		};
+		4248D0F121D4DB2F00B5E217 /* CommonClass */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CommonClass;
+			sourceTree = "<group>";
+		};
+		4248D0F521D4DBE100B5E217 /* MVC-Class */ = {
+			isa = PBXGroup;
+			children = (
+				4248D0F621D4DC3600B5E217 /* LeonMainPageVC.h */,
+				4248D0F721D4DC3600B5E217 /* LeonMainPageVC.m */,
+				4248D0F921D4DC5C00B5E217 /* LeonSettingVC.h */,
+				4248D0FA21D4DC5C00B5E217 /* LeonSettingVC.m */,
+			);
+			path = "MVC-Class";
+			sourceTree = "<group>";
+		};
 		4264893321D48D4C00D00443 = {
 			isa = PBXGroup;
 			children = (
 				4264893E21D48D4C00D00443 /* LocalBookForSelf */,
+				4248D0EF21D4DAF400B5E217 /* Coding */,
+				4248D0ED21D4D85700B5E217 /* Coredata */,
 				4248D09D21D4C2F200B5E217 /* Resources */,
 				4248D0C621D4CF5000B5E217 /* Libraries */,
 				4264893D21D48D4C00D00443 /* Products */,
@@ -157,14 +216,10 @@
 			children = (
 				4264893F21D48D4C00D00443 /* AppDelegate.h */,
 				4264894021D48D4C00D00443 /* AppDelegate.m */,
-				4264894221D48D4C00D00443 /* ViewController.h */,
-				4264894321D48D4C00D00443 /* ViewController.m */,
-				4264894521D48D4C00D00443 /* Main.storyboard */,
-				4264894B21D48D4E00D00443 /* Assets.xcassets */,
-				4264894D21D48D4E00D00443 /* LaunchScreen.storyboard */,
+				4264894221D48D4C00D00443 /* RootViewController.h */,
+				4264894321D48D4C00D00443 /* RootViewController.m */,
 				4264895021D48D4E00D00443 /* Info.plist */,
 				4264895121D48D4E00D00443 /* main.m */,
-				4264894821D48D4C00D00443 /* LocalBookForSelf.xcdatamodeld */,
 			);
 			path = LocalBookForSelf;
 			sourceTree = "<group>";
@@ -245,10 +300,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4248D0E621D4D25E00B5E217 /* RNEncryptor.m in Sources */,
-				4264894421D48D4C00D00443 /* ViewController.m in Sources */,
+				4248D0F421D4DBD000B5E217 /* BaseViewController.m in Sources */,
+				4264894421D48D4C00D00443 /* RootViewController.m in Sources */,
 				4264894121D48D4C00D00443 /* AppDelegate.m in Sources */,
 				4264895221D48D4E00D00443 /* main.m in Sources */,
+				4248D0F821D4DC3600B5E217 /* LeonMainPageVC.m in Sources */,
 				4264894A21D48D4C00D00443 /* LocalBookForSelf.xcdatamodeld in Sources */,
+				4248D0FB21D4DC5C00B5E217 /* LeonSettingVC.m in Sources */,
 				4248D0E721D4D25E00B5E217 /* RNCryptorEngine.m in Sources */,
 				4248D0E521D4D25E00B5E217 /* RNDecryptor.m in Sources */,
 				4248D0E421D4D25E00B5E217 /* RNCryptor.m in Sources */,
@@ -431,8 +489,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6H43P4L72Y;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Resources/LJZ-PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = LocalBookForSelf/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -441,6 +501,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ljz.coding.LocalBookForSelf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Debug;
 		};
@@ -450,8 +511,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6H43P4L72Y;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Resources/LJZ-PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = LocalBookForSelf/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -460,6 +523,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ljz.coding.LocalBookForSelf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Release;
 		};

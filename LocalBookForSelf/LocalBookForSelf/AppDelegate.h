@@ -8,11 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import "RootViewController.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>{
+    RootViewController *_rootVC;
+    UINavigationController *navigationController;
+}
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (atomic, readonly) UINavigationController *navController;
 @property (readonly, strong) NSPersistentContainer *persistentContainer;
 
 - (void)saveContext;

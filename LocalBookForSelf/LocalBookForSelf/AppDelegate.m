@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "RootViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +18,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(screenShootAction:) name:UIApplicationUserDidTakeScreenshotNotification object:nil];
+    // 创建Window
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    // 设置Window的背景颜色
+    self.window.backgroundColor = [UIColor whiteColor];
+    // 创建根控制器
+    _rootVC = [[RootViewController alloc] init];
+    
+//    _navController = [[UINavigationController alloc]initWithRootViewController:_rootVC];
+//    _navController.hidesBarsOnTap = YES;
+    // 设置根控制器
+    self.window.rootViewController = _rootVC;
+    // 设置并显示主窗口
+    [self.window makeKeyAndVisible];
+    // 监听截屏事件
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(screenShootAction:) name:UIApplicationUserDidTakeScreenshotNotification object:nil];
+
     return YES;
 }
 
