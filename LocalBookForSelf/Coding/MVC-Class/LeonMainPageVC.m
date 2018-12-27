@@ -17,19 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-//    UIButton *helloBtn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, SCREEN_WIDTH - 200, 50)];
-//    helloBtn.backgroundColor = [UIColor redColor];
-//    [helloBtn setTitle:@"hello world" forState:UIControlStateNormal];
-//    [helloBtn addTarget:self action:@selector(showToast) forControlEvents:UIControlEventTouchUpInside];
-//    [self.view addSubview:helloBtn];
-}
-- (void)showToast{
-    // 打开新ViewController
-//    BlogDetailViewController *blogDetail = [[BlogDetailViewController alloc] init];
-//    blogDetail.hidesBottomBarWhenPushed=YES;
-//    [self.navigationController pushViewController:blogDetail animated:YES];
-}
 
+}
 /*
 #pragma mark - Navigation
 
