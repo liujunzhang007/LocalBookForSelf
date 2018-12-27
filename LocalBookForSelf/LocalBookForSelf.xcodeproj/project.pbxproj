@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4248D0AE21D4CA3E00B5E217 /* Localized.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4248D0B021D4CA3E00B5E217 /* Localized.strings */; };
+		4248D0BA21D4CB3500B5E217 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4248D0BC21D4CB3500B5E217 /* InfoPlist.strings */; };
+		4248D0C121D4CB7100B5E217 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 4248D0C321D4CB7100B5E217 /* Localizable.stringsdict */; };
+		4248D0D821D4D06800B5E217 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4248D0D721D4D06800B5E217 /* Security.framework */; };
+		4248D0E421D4D25E00B5E217 /* RNCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4248D0DB21D4D25E00B5E217 /* RNCryptor.m */; };
+		4248D0E521D4D25E00B5E217 /* RNDecryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4248D0E121D4D25E00B5E217 /* RNDecryptor.m */; };
+		4248D0E621D4D25E00B5E217 /* RNEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4248D0E221D4D25E00B5E217 /* RNEncryptor.m */; };
+		4248D0E721D4D25E00B5E217 /* RNCryptorEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4248D0E321D4D25E00B5E217 /* RNCryptorEngine.m */; };
 		4264894121D48D4C00D00443 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4264894021D48D4C00D00443 /* AppDelegate.m */; };
 		4264894421D48D4C00D00443 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4264894321D48D4C00D00443 /* ViewController.m */; };
 		4264894721D48D4C00D00443 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4264894521D48D4C00D00443 /* Main.storyboard */; };
@@ -17,6 +25,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4248D09F21D4C3E400B5E217 /* LJZ-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LJZ-PrefixHeader.pch"; sourceTree = "<group>"; };
+		4248D0AA21D4C9C300B5E217 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		4248D0AB21D4C9C300B5E217 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		4248D0AC21D4C9CB00B5E217 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		4248D0AD21D4C9CB00B5E217 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		4248D0AF21D4CA3E00B5E217 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localized.strings; sourceTree = "<group>"; };
+		4248D0B121D4CA4200B5E217 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localized.strings"; sourceTree = "<group>"; };
+		4248D0B221D4CA4400B5E217 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localized.strings"; sourceTree = "<group>"; };
+		4248D0BB21D4CB3500B5E217 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4248D0BD21D4CB3700B5E217 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		4248D0BE21D4CB3A00B5E217 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		4248D0C221D4CB7100B5E217 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		4248D0C421D4CB7200B5E217 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.stringsdict"; sourceTree = "<group>"; };
+		4248D0C521D4CB7300B5E217 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.stringsdict"; sourceTree = "<group>"; };
+		4248D0D721D4D06800B5E217 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		4248D0DA21D4D25E00B5E217 /* RNDecryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNDecryptor.h; sourceTree = "<group>"; };
+		4248D0DB21D4D25E00B5E217 /* RNCryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCryptor.m; sourceTree = "<group>"; };
+		4248D0DC21D4D25E00B5E217 /* RNCryptor+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNCryptor+Private.h"; sourceTree = "<group>"; };
+		4248D0DD21D4D25E00B5E217 /* RNCryptor-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNCryptor-Prefix.pch"; sourceTree = "<group>"; };
+		4248D0DE21D4D25E00B5E217 /* RNCryptorEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCryptorEngine.h; sourceTree = "<group>"; };
+		4248D0DF21D4D25E00B5E217 /* RNEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNEncryptor.h; sourceTree = "<group>"; };
+		4248D0E021D4D25E00B5E217 /* RNCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCryptor.h; sourceTree = "<group>"; };
+		4248D0E121D4D25E00B5E217 /* RNDecryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNDecryptor.m; sourceTree = "<group>"; };
+		4248D0E221D4D25E00B5E217 /* RNEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNEncryptor.m; sourceTree = "<group>"; };
+		4248D0E321D4D25E00B5E217 /* RNCryptorEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCryptorEngine.m; sourceTree = "<group>"; };
+		4248D0E921D4D32100B5E217 /* RNCryptor iOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNCryptor iOS.h"; sourceTree = "<group>"; };
+		4248D0EA21D4D32100B5E217 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		4248D0EB21D4D32100B5E217 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4264893C21D48D4C00D00443 /* LocalBookForSelf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalBookForSelf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4264893F21D48D4C00D00443 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4264894021D48D4C00D00443 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -35,17 +71,76 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4248D0D821D4D06800B5E217 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4248D09D21D4C2F200B5E217 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4248D09F21D4C3E400B5E217 /* LJZ-PrefixHeader.pch */,
+				4248D0B021D4CA3E00B5E217 /* Localized.strings */,
+				4248D0BC21D4CB3500B5E217 /* InfoPlist.strings */,
+				4248D0C321D4CB7100B5E217 /* Localizable.stringsdict */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4248D0C621D4CF5000B5E217 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				4248D0D921D4D25E00B5E217 /* RNCryptor */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		4248D0D621D4D06800B5E217 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4248D0D721D4D06800B5E217 /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4248D0D921D4D25E00B5E217 /* RNCryptor */ = {
+			isa = PBXGroup;
+			children = (
+				4248D0E821D4D32100B5E217 /* RNCryptor iOS */,
+				4248D0DA21D4D25E00B5E217 /* RNDecryptor.h */,
+				4248D0DB21D4D25E00B5E217 /* RNCryptor.m */,
+				4248D0DC21D4D25E00B5E217 /* RNCryptor+Private.h */,
+				4248D0DD21D4D25E00B5E217 /* RNCryptor-Prefix.pch */,
+				4248D0DE21D4D25E00B5E217 /* RNCryptorEngine.h */,
+				4248D0DF21D4D25E00B5E217 /* RNEncryptor.h */,
+				4248D0E021D4D25E00B5E217 /* RNCryptor.h */,
+				4248D0E121D4D25E00B5E217 /* RNDecryptor.m */,
+				4248D0E221D4D25E00B5E217 /* RNEncryptor.m */,
+				4248D0E321D4D25E00B5E217 /* RNCryptorEngine.m */,
+			);
+			path = RNCryptor;
+			sourceTree = "<group>";
+		};
+		4248D0E821D4D32100B5E217 /* RNCryptor iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4248D0E921D4D32100B5E217 /* RNCryptor iOS.h */,
+				4248D0EA21D4D32100B5E217 /* module.modulemap */,
+				4248D0EB21D4D32100B5E217 /* Info.plist */,
+			);
+			path = "RNCryptor iOS";
+			sourceTree = "<group>";
+		};
 		4264893321D48D4C00D00443 = {
 			isa = PBXGroup;
 			children = (
 				4264893E21D48D4C00D00443 /* LocalBookForSelf */,
+				4248D09D21D4C2F200B5E217 /* Resources */,
+				4248D0C621D4CF5000B5E217 /* Libraries */,
 				4264893D21D48D4C00D00443 /* Products */,
+				4248D0D621D4D06800B5E217 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +210,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
+				"zh-Hant",
 			);
 			mainGroup = 4264893321D48D4C00D00443;
 			productRefGroup = 4264893D21D48D4C00D00443 /* Products */;
@@ -131,9 +228,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4248D0AE21D4CA3E00B5E217 /* Localized.strings in Resources */,
 				4264894F21D48D4E00D00443 /* LaunchScreen.storyboard in Resources */,
 				4264894C21D48D4E00D00443 /* Assets.xcassets in Resources */,
 				4264894721D48D4C00D00443 /* Main.storyboard in Resources */,
+				4248D0BA21D4CB3500B5E217 /* InfoPlist.strings in Resources */,
+				4248D0C121D4CB7100B5E217 /* Localizable.stringsdict in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,20 +244,56 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4248D0E621D4D25E00B5E217 /* RNEncryptor.m in Sources */,
 				4264894421D48D4C00D00443 /* ViewController.m in Sources */,
 				4264894121D48D4C00D00443 /* AppDelegate.m in Sources */,
 				4264895221D48D4E00D00443 /* main.m in Sources */,
 				4264894A21D48D4C00D00443 /* LocalBookForSelf.xcdatamodeld in Sources */,
+				4248D0E721D4D25E00B5E217 /* RNCryptorEngine.m in Sources */,
+				4248D0E521D4D25E00B5E217 /* RNDecryptor.m in Sources */,
+				4248D0E421D4D25E00B5E217 /* RNCryptor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		4248D0B021D4CA3E00B5E217 /* Localized.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4248D0AF21D4CA3E00B5E217 /* en */,
+				4248D0B121D4CA4200B5E217 /* zh-Hans */,
+				4248D0B221D4CA4400B5E217 /* zh-Hant */,
+			);
+			name = Localized.strings;
+			sourceTree = "<group>";
+		};
+		4248D0BC21D4CB3500B5E217 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4248D0BB21D4CB3500B5E217 /* en */,
+				4248D0BD21D4CB3700B5E217 /* zh-Hans */,
+				4248D0BE21D4CB3A00B5E217 /* zh-Hant */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4248D0C321D4CB7100B5E217 /* Localizable.stringsdict */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4248D0C221D4CB7100B5E217 /* en */,
+				4248D0C421D4CB7200B5E217 /* zh-Hans */,
+				4248D0C521D4CB7300B5E217 /* zh-Hant */,
+			);
+			name = Localizable.stringsdict;
+			sourceTree = "<group>";
+		};
 		4264894521D48D4C00D00443 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4264894621D48D4C00D00443 /* Base */,
+				4248D0AA21D4C9C300B5E217 /* zh-Hans */,
+				4248D0AC21D4C9CB00B5E217 /* zh-Hant */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -166,6 +302,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				4264894E21D48D4E00D00443 /* Base */,
+				4248D0AB21D4C9C300B5E217 /* zh-Hans */,
+				4248D0AD21D4C9CB00B5E217 /* zh-Hant */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -177,6 +315,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -236,6 +375,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -291,6 +431,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6H43P4L72Y;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Resources/LJZ-PrefixHeader.pch";
 				INFOPLIST_FILE = LocalBookForSelf/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -308,6 +450,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6H43P4L72Y;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Resources/LJZ-PrefixHeader.pch";
 				INFOPLIST_FILE = LocalBookForSelf/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

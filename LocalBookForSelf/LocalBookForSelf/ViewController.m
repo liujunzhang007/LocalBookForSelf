@@ -17,7 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(screenShootAction:) name:UIApplicationUserDidTakeScreenshotNotification object:nil];
+
+    NSData *data = [NSData data];
+    NSError *error;
+    NSData *encryptedData = [RNEncryptor encryptData:data withSettings:kRNCryptorAES256Settings password:@"123456" error:&error];
+    
+    NSData *decryptedData = [RNDecryptor decryptData:encryptedData withSettings:kRNCryptorAES256Settings password:@"123456" error:&error];
+    MyLog(@"%@",decryptedData);
 }
 
 

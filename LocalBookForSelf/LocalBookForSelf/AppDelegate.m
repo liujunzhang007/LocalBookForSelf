@@ -17,6 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(screenShootAction:) name:UIApplicationUserDidTakeScreenshotNotification object:nil];
     return YES;
 }
 
@@ -47,6 +48,12 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     // Saves changes in the application's managed object context before the application terminates.
     [self saveContext];
+}
+#pragma mark -
+#pragma mark - Method
+- (void)screenShootAction:(NSNotification *)noti{
+    
+    
 }
 
 
