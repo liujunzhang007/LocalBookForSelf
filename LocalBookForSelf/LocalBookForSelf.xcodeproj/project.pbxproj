@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35C19AB621D65B3F005CB393 /* LeonBaseLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C19AB521D65B3F005CB393 /* LeonBaseLabel.m */; };
 		4248D0AE21D4CA3E00B5E217 /* Localized.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4248D0B021D4CA3E00B5E217 /* Localized.strings */; };
 		4248D0BA21D4CB3500B5E217 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4248D0BC21D4CB3500B5E217 /* InfoPlist.strings */; };
 		4248D0C121D4CB7100B5E217 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 4248D0C321D4CB7100B5E217 /* Localizable.stringsdict */; };
@@ -42,6 +43,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35C19AB421D65B3F005CB393 /* LeonBaseLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeonBaseLabel.h; sourceTree = "<group>"; };
+		35C19AB521D65B3F005CB393 /* LeonBaseLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeonBaseLabel.m; sourceTree = "<group>"; };
 		4248D09F21D4C3E400B5E217 /* LJZ-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LJZ-PrefixHeader.pch"; sourceTree = "<group>"; };
 		4248D0AA21D4C9C300B5E217 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		4248D0AB21D4C9C300B5E217 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -133,6 +136,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35C19AB321D65B30005CB393 /* CommonClass */ = {
+			isa = PBXGroup;
+			children = (
+				35C19AB421D65B3F005CB393 /* LeonBaseLabel.h */,
+				35C19AB521D65B3F005CB393 /* LeonBaseLabel.m */,
+			);
+			path = CommonClass;
+			sourceTree = "<group>";
+		};
 		4248D09D21D4C2F200B5E217 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,8 +215,8 @@
 		4248D0EF21D4DAF400B5E217 /* Coding */ = {
 			isa = PBXGroup;
 			children = (
+				35C19AB321D65B30005CB393 /* CommonClass */,
 				4248D0F521D4DBE100B5E217 /* MVC-Class */,
-				4248D0F121D4DB2F00B5E217 /* CommonClass */,
 				4248D0F021D4DB2500B5E217 /* BaseClass */,
 			);
 			path = Coding;
@@ -221,13 +233,6 @@
 				425D984C21D63DF3002A1B8A /* BaseTableViewDelegate.m */,
 			);
 			path = BaseClass;
-			sourceTree = "<group>";
-		};
-		4248D0F121D4DB2F00B5E217 /* CommonClass */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CommonClass;
 			sourceTree = "<group>";
 		};
 		4248D0F521D4DBE100B5E217 /* MVC-Class */ = {
@@ -408,6 +413,7 @@
 				425D984521D5EB07002A1B8A /* MASViewConstraint.m in Sources */,
 				425D984021D5EB07002A1B8A /* MASConstraintMaker.m in Sources */,
 				4248D0E521D4D25E00B5E217 /* RNDecryptor.m in Sources */,
+				35C19AB621D65B3F005CB393 /* LeonBaseLabel.m in Sources */,
 				4248D0E421D4D25E00B5E217 /* RNCryptor.m in Sources */,
 				425D983D21D5EB07002A1B8A /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 			);
