@@ -7,17 +7,38 @@
 //
 
 #import "LeonMainPageVC.h"
+#import "MainPageTableViewDelegate.h"
 
 @interface LeonMainPageVC ()
 
 @end
 
-@implementation LeonMainPageVC
+@implementation LeonMainPageVC{
+    
+    UITableView *_tableView;
+    MainPageTableViewDelegate *_delegate;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self configurationUI];
 
+}
+- (void)configurationUI{
+    __weak typeof(self) weakSelf = self;
+    _delegate = [[MainPageTableViewDelegate alloc]init];
+    _tableView = [[UITableView alloc]init];
+    _tableView.delegate = _delegate;
+    _tableView.dataSource = _delegate;
+    [self.view addSubview:_tableView];
+    [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(weakSelf.view.mas_top);
+        make.left.mas_equalTo(weakSelf.view.mas_left);
+        make.right.mas_equalTo(weakSelf.view.mas_right);
+        make.bottom.mas_equalTo(weakSelf.view.mas_bottom);
+    }];
+    
 }
 /*
 #pragma mark - Navigation
