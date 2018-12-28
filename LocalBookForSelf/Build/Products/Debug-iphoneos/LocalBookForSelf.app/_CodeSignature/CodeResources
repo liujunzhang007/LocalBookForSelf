@@ -6,15 +6,19 @@
 	<dict>
 		<key>AppIcon60x60@2x.png</key>
 		<data>
-		le3qJr+t8X/fOTJhnMvVillc1uM=
+		Ojz6lhA9hZpPkHJTXKdMFh6p/fM=
+		</data>
+		<key>AppIcon76x76@2x~ipad.png</key>
+		<data>
+		WcPW4K9uIRZi80q170mt5FnPN6U=
 		</data>
 		<key>Assets.car</key>
 		<data>
-		vvbO+SUkoVL9SwNWNWy/OkM5I2A=
+		6t8UBHB3mQChCAYGALegChXc2eY=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		RBI0SNHreplNPCiZTelP92eh21g=
+		pcqLrJC04IPH++EUZViVd4DUM+A=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -22,11 +26,11 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		YkDsYqfSq6typTbUlanvQHLaik8=
+		TSu4gUo/vc9Y7PI+ig3muqTrLZg=
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		1jCq04IYX8bxJqvt+ZLJlF5jJNA=
+		cFVZUhZkOYDhemGqyr/gdhJkhDw=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -34,11 +38,15 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
 		<data>
-		Ql0hADCOd/+Doek45XWLD8eN8vI=
+		b97cpZR0ftMATk3teK5PLhBQAYA=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		eW+/FsSKGvYZ5DH2SDm5ZC5RHOo=
+		FRk2Vd8h2O2cw7VsaMLQGJvI57o=
+		</data>
+		<key>LaunchImage-700-568h@2x.png</key>
+		<data>
+		jUzAVDZErJq8r4xRQMYF5Kc4BgE=
 		</data>
 		<key>LocalBookForSelf.momd/LocalBookForSelf.mom</key>
 		<data>
@@ -184,21 +192,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VcoLaCXoW/TwCljXfdu3U4845QR0/dxP2xbE/1b8eoE=
+			VckDwcpLGERyTOiLH0Fmyo28K1OQe295x88dTp2M8v8=
+			</data>
+		</dict>
+		<key>AppIcon76x76@2x~ipad.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DGk9MUvQ2zJ9Nt6dHSg90ukuAh5p4IyOhxJWQ98R34k=
 			</data>
 		</dict>
 		<key>Assets.car</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qiqEP6li8kzJJ1vAms5oI91/IVfPs87uxa/fdFyj/+8=
+			q7kLPJYROeScOlwK5i+wXtJptC7lzFJO2IvD/NDJgf8=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bMz3ZOcZTRGg+NULyZCxIYuyDOjO1318CIKqSrCptk8=
+			lDxcZkgUbMBi+WYqr0pIODJa4trmSg2qoQAO2ypgBVQ=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -212,14 +227,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			G1dILhr8Ea07o5H7r/orqvZrAMBWAeLgBmn17+M2yP0=
+			8Be3/XNjOJ3zkwCFrr/O01gC3/DpjIwEgZDhv7Y1sSM=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ltmZoMt5c0HtajBZChbBnFO9bYhFjs/lZxXTgGrgPx8=
+			lhWOuaplesd4jbkMtYg7uiaPzFDdRV7W7QSyxXgs0ac=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -233,7 +248,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9l3Zy3SgXOOz/PhAX6elt2g7x5ZRDSAOxqZykTcNiys=
+			6O2lLSkpfmdYNW1vuHbiIrZAZV3yaip3Ovuid2rCO0c=
+			</data>
+		</dict>
+		<key>LaunchImage-700-568h@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zk4M8Nt4RUdrZyscD2Fls3DuhrSZpwnGFwXIWTdHmrw=
 			</data>
 		</dict>
 		<key>LocalBookForSelf.momd/LocalBookForSelf.mom</key>

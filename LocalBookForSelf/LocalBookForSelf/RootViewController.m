@@ -21,23 +21,25 @@
     LeonMainPageVC *homeVC=[[LeonMainPageVC alloc] init];
     [self setTabBarItem:homeVC.tabBarItem
                   title:@"首页"
-              titleSize:13.0
+              titleSize:10.0
           titleFontName:@"HeiTi SC"
-          selectedImage:@"common_bar_home"
-     selectedTitleColor:UIColorFromRGB(0x0c97f9)
-            normalImage:@"common_bar_home"
+          selectedImage:@"mian_note_sele"
+     selectedTitleColor:UIColorFromRGB(0x000000)
+            normalImage:@"main_note_nor"
        normalTitleColor:[UIColor grayColor]];
     
     LeonSettingVC *blogVC=[[LeonSettingVC alloc] init];
     [self setTabBarItem:blogVC.tabBarItem
                   title:@"我的"
-              titleSize:13.0
+              titleSize:10.0
           titleFontName:@"HeiTi SC"
-          selectedImage:@"common_bar_mine"
-     selectedTitleColor:UIColorFromRGB(0x0c97f9)
-            normalImage:@"common_bar_mine"
+          selectedImage:@"mian_setting_sele"
+     selectedTitleColor:UIColorFromRGB(0x000000)
+            normalImage:@"main_setting_nor"
        normalTitleColor:[UIColor grayColor]];
+
     
+
     UINavigationController *homeNV = [[UINavigationController alloc] initWithRootViewController:homeVC];
     UINavigationController *blogNV = [[UINavigationController alloc] initWithRootViewController:blogVC];
     [self setNavigationController:homeNV];
@@ -62,14 +64,14 @@
 {
     
     //设置图片
-    tabbarItem = [tabbarItem initWithTitle:title image:[[UIImage imageNamed:unselectedImage]imageWithRenderingMode:UIImageRenderingModeAutomatic] selectedImage:[[UIImage imageNamed:selectedImage]imageWithRenderingMode:UIImageRenderingModeAutomatic]];
+    tabbarItem = [tabbarItem initWithTitle:title image:[[UIImage imageNamed:unselectedImage]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:selectedImage]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     [tabbarItem setTitle:title];
     
-//    // 未选中字体颜色
-//    [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:unselectColor,NSFontAttributeName:[UIFont fontWithName:fontName size:size]} forState:UIControlStateNormal];
-//
-//    // 选中字体颜色
-//    [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:selectColor,NSFontAttributeName:[UIFont fontWithName:fontName size:size]} forState:UIControlStateSelected];
+    // 未选中字体颜色
+    [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:unselectColor,NSFontAttributeName:[UIFont fontWithName:fontName size:size]} forState:UIControlStateNormal];
+
+    // 选中字体颜色
+    [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:selectColor,NSFontAttributeName:[UIFont fontWithName:fontName size:size]} forState:UIControlStateSelected];
 }
 
 
