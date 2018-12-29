@@ -21,13 +21,22 @@
         for (int i = 0; i<5; i++) {
             [rowArray addObject:tempDict];
         }
-        for (int j = 0; j < 10; j++) {
+        for (int j = 0; j < 2; j++) {
             [sectionArray addObject:tempDict];
             [dataArray addObject:rowArray];
         }
     }
     return self;
 }
+#pragma mark -
+#pragma mark - ActionMethod
+
+-(void)selectorAction:(UITapGestureRecognizer *)tap{
+    MyLog(@"selectorAction");
+}
+#pragma mark -
+#pragma mark - UITableViewDelegate
+
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MainPageTableViewDelegate"];
     if (cell == nil) {
@@ -92,11 +101,7 @@
      }
     */
 
-    
     return headSectionView;
-    
-}
--(void)selectorAction:(UITapGestureRecognizer *)tap{
     
 }
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
@@ -108,6 +113,33 @@
 }
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
     
+    
+}
+
+
+#pragma mark -
+#pragma mark - UISearchControllerDelegate
+
+- (void)willPresentSearchController:(UISearchController *)searchController{
+    MyLog(@"willPresentSearchController");
+}
+- (void)didPresentSearchController:(UISearchController *)searchController{
+    MyLog(@"didPresentSearchController");
+}
+- (void)willDismissSearchController:(UISearchController *)searchController{
+    MyLog(@"willDismissSearchController");
+}
+- (void)didDismissSearchController:(UISearchController *)searchController{
+    MyLog(@"didDismissSearchController");
+}
+- (void)presentSearchController:(UISearchController *)searchController{
+    MyLog(@"presentSearchController");
+}
+
+#pragma mark -
+#pragma mark - UISearchResultsUpdating
+
+- (void)updateSearchResultsForSearchController:(UISearchController *)searchController{
     
 }
 @end

@@ -1,19 +1,23 @@
 //
-//  BaseViewController.m
+//  BaseSearchController.m
 //  LocalBookForSelf
 //
-//  Created by 刘俊彰 on 2018/12/27.
+//  Created by 刘俊彰 on 2018/12/29.
 //  Copyright © 2018 刘俊彰. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "BaseSearchController.h"
 
-@interface BaseViewController ()
+@interface BaseSearchController ()
 
 @end
 
-@implementation BaseViewController{
-    
+@implementation BaseSearchController
+- (instancetype)initWithSearchResultsController:(UIViewController *)searchResultsController{
+    if (self = [super initWithSearchResultsController:searchResultsController]) {
+        [self configurationDefault];
+    }
+    return self;
 }
 - (instancetype)init{
     if (self = [super init]) {
@@ -25,24 +29,9 @@
     if (self = [super initWithCoder:aDecoder]) {
         [self configurationDefault];
     }
-    return self;
+         return self;
 }
-- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
-    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-        [self configurationDefault];
-    }
-    return self;
-}
-
 - (void)configurationDefault{
-    __weak typeof(self) weakSelf = self;
-    _weakSelf = weakSelf;
-//    if (OSVersionIsAtLeastiOS7()) {
-//        if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
-//        {
-//            self.edgesForExtendedLayout = UIRectEdgeNone;
-//        }
-//    }
     self.edgesForExtendedLayout = UIRectEdgeNone;
 }
 - (void)viewDidLoad {

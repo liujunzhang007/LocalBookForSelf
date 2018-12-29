@@ -19,6 +19,8 @@
 		4248D0F421D4DBD000B5E217 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4248D0F321D4DBD000B5E217 /* BaseViewController.m */; };
 		4248D0F821D4DC3600B5E217 /* LeonMainPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4248D0F721D4DC3600B5E217 /* LeonMainPageVC.m */; };
 		4248D0FB21D4DC5C00B5E217 /* LeonSettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4248D0FA21D4DC5C00B5E217 /* LeonSettingVC.m */; };
+		4253522021D74C80009B9C71 /* BaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4253521F21D74C80009B9C71 /* BaseTableView.m */; };
+		4253522321D752AD009B9C71 /* LeonBaseSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4253522221D752AD009B9C71 /* LeonBaseSearchController.m */; };
 		425D983D21D5EB07002A1B8A /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 425D982421D5EB07002A1B8A /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		425D983E21D5EB07002A1B8A /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 425D982D21D5EB07002A1B8A /* ViewController+MASAdditions.m */; };
 		425D983F21D5EB07002A1B8A /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 425D983121D5EB07002A1B8A /* MASCompositeConstraint.m */; };
@@ -40,6 +42,9 @@
 		4264894C21D48D4E00D00443 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4264894B21D48D4E00D00443 /* Assets.xcassets */; };
 		4264894F21D48D4E00D00443 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4264894D21D48D4E00D00443 /* LaunchScreen.storyboard */; };
 		4264895221D48D4E00D00443 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4264895121D48D4E00D00443 /* main.m */; };
+		4291CE8721D714310061C7B9 /* BaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4291CE8621D714310061C7B9 /* BaseNavigationViewController.m */; };
+		4291CE8A21D7156D0061C7B9 /* LeonBaseTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4291CE8921D7156D0061C7B9 /* LeonBaseTextField.m */; };
+		42C6FB4321D71E44007654BA /* BaseSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C6FB4221D71E44007654BA /* BaseSearchController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +84,10 @@
 		4248D0F721D4DC3600B5E217 /* LeonMainPageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeonMainPageVC.m; sourceTree = "<group>"; };
 		4248D0F921D4DC5C00B5E217 /* LeonSettingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeonSettingVC.h; sourceTree = "<group>"; };
 		4248D0FA21D4DC5C00B5E217 /* LeonSettingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeonSettingVC.m; sourceTree = "<group>"; };
+		4253521E21D74C80009B9C71 /* BaseTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableView.h; sourceTree = "<group>"; };
+		4253521F21D74C80009B9C71 /* BaseTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableView.m; sourceTree = "<group>"; };
+		4253522121D752AD009B9C71 /* LeonBaseSearchController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeonBaseSearchController.h; sourceTree = "<group>"; };
+		4253522221D752AD009B9C71 /* LeonBaseSearchController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeonBaseSearchController.m; sourceTree = "<group>"; };
 		425D982321D5EB07002A1B8A /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		425D982421D5EB07002A1B8A /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
 		425D982521D5EB07002A1B8A /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -122,6 +131,14 @@
 		4264894E21D48D4E00D00443 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4264895021D48D4E00D00443 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4264895121D48D4E00D00443 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4291CE8521D714310061C7B9 /* BaseNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationViewController.h; sourceTree = "<group>"; };
+		4291CE8621D714310061C7B9 /* BaseNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationViewController.m; sourceTree = "<group>"; };
+		4291CE8821D7156D0061C7B9 /* LeonBaseTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeonBaseTextField.h; sourceTree = "<group>"; };
+		4291CE8921D7156D0061C7B9 /* LeonBaseTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeonBaseTextField.m; sourceTree = "<group>"; };
+		4291CE8B21D7159B0061C7B9 /* CommomClasses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommomClasses.h; sourceTree = "<group>"; };
+		42C6FB4121D71E44007654BA /* BaseSearchController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseSearchController.h; sourceTree = "<group>"; };
+		42C6FB4221D71E44007654BA /* BaseSearchController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseSearchController.m; sourceTree = "<group>"; };
+		42C6FB4421D71E8D007654BA /* BaseClasses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseClasses.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,8 +156,13 @@
 		35C19AB321D65B30005CB393 /* CommonClass */ = {
 			isa = PBXGroup;
 			children = (
+				4291CE8B21D7159B0061C7B9 /* CommomClasses.h */,
 				35C19AB421D65B3F005CB393 /* LeonBaseLabel.h */,
 				35C19AB521D65B3F005CB393 /* LeonBaseLabel.m */,
+				4291CE8821D7156D0061C7B9 /* LeonBaseTextField.h */,
+				4291CE8921D7156D0061C7B9 /* LeonBaseTextField.m */,
+				4253522121D752AD009B9C71 /* LeonBaseSearchController.h */,
+				4253522221D752AD009B9C71 /* LeonBaseSearchController.m */,
 			);
 			path = CommonClass;
 			sourceTree = "<group>";
@@ -148,10 +170,6 @@
 		4248D09D21D4C2F200B5E217 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4248D09F21D4C3E400B5E217 /* LJZ-PrefixHeader.pch */,
-				4264894B21D48D4E00D00443 /* Assets.xcassets */,
-				4264894D21D48D4E00D00443 /* LaunchScreen.storyboard */,
-				4264894521D48D4C00D00443 /* Main.storyboard */,
 				4248D0B021D4CA3E00B5E217 /* Localized.strings */,
 				4248D0BC21D4CB3500B5E217 /* InfoPlist.strings */,
 				4248D0C321D4CB7100B5E217 /* Localizable.stringsdict */,
@@ -215,8 +233,8 @@
 		4248D0EF21D4DAF400B5E217 /* Coding */ = {
 			isa = PBXGroup;
 			children = (
-				35C19AB321D65B30005CB393 /* CommonClass */,
 				4248D0F521D4DBE100B5E217 /* MVC-Class */,
+				35C19AB321D65B30005CB393 /* CommonClass */,
 				4248D0F021D4DB2500B5E217 /* BaseClass */,
 			);
 			path = Coding;
@@ -225,12 +243,19 @@
 		4248D0F021D4DB2500B5E217 /* BaseClass */ = {
 			isa = PBXGroup;
 			children = (
+				42C6FB4421D71E8D007654BA /* BaseClasses.h */,
 				4248D0F221D4DBD000B5E217 /* BaseViewController.h */,
 				4248D0F321D4DBD000B5E217 /* BaseViewController.m */,
 				425D984821D63DAF002A1B8A /* BaseModel.h */,
 				425D984921D63DAF002A1B8A /* BaseModel.m */,
 				425D984B21D63DF3002A1B8A /* BaseTableViewDelegate.h */,
 				425D984C21D63DF3002A1B8A /* BaseTableViewDelegate.m */,
+				4291CE8521D714310061C7B9 /* BaseNavigationViewController.h */,
+				4291CE8621D714310061C7B9 /* BaseNavigationViewController.m */,
+				42C6FB4121D71E44007654BA /* BaseSearchController.h */,
+				42C6FB4221D71E44007654BA /* BaseSearchController.m */,
+				4253521E21D74C80009B9C71 /* BaseTableView.h */,
+				4253521F21D74C80009B9C71 /* BaseTableView.m */,
 			);
 			path = BaseClass;
 			sourceTree = "<group>";
@@ -289,6 +314,10 @@
 				4248D0ED21D4D85700B5E217 /* Coredata */,
 				4248D09D21D4C2F200B5E217 /* Resources */,
 				4248D0C621D4CF5000B5E217 /* Libraries */,
+				4248D09F21D4C3E400B5E217 /* LJZ-PrefixHeader.pch */,
+				4264894B21D48D4E00D00443 /* Assets.xcassets */,
+				4264894521D48D4C00D00443 /* Main.storyboard */,
+				4264894D21D48D4E00D00443 /* LaunchScreen.storyboard */,
 				4264893D21D48D4C00D00443 /* Products */,
 				4248D0D621D4D06800B5E217 /* Frameworks */,
 			);
@@ -409,11 +438,16 @@
 				425D984A21D63DAF002A1B8A /* BaseModel.m in Sources */,
 				425D983F21D5EB07002A1B8A /* MASCompositeConstraint.m in Sources */,
 				425D984221D5EB07002A1B8A /* NSArray+MASAdditions.m in Sources */,
+				4253522021D74C80009B9C71 /* BaseTableView.m in Sources */,
+				42C6FB4321D71E44007654BA /* BaseSearchController.m in Sources */,
 				425D984D21D63DF3002A1B8A /* BaseTableViewDelegate.m in Sources */,
 				425D984521D5EB07002A1B8A /* MASViewConstraint.m in Sources */,
+				4291CE8A21D7156D0061C7B9 /* LeonBaseTextField.m in Sources */,
 				425D984021D5EB07002A1B8A /* MASConstraintMaker.m in Sources */,
 				4248D0E521D4D25E00B5E217 /* RNDecryptor.m in Sources */,
 				35C19AB621D65B3F005CB393 /* LeonBaseLabel.m in Sources */,
+				4291CE8721D714310061C7B9 /* BaseNavigationViewController.m in Sources */,
+				4253522321D752AD009B9C71 /* LeonBaseSearchController.m in Sources */,
 				4248D0E421D4D25E00B5E217 /* RNCryptor.m in Sources */,
 				425D983D21D5EB07002A1B8A /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 			);
@@ -598,7 +632,7 @@
 				DEVELOPMENT_TEAM = 6H43P4L72Y;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/Resources/LJZ-PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LJZ-PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = LocalBookForSelf/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -622,7 +656,7 @@
 				DEVELOPMENT_TEAM = 6H43P4L72Y;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/Resources/LJZ-PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LJZ-PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = LocalBookForSelf/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

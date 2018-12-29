@@ -1,0 +1,107 @@
+//
+//  LJZ-PrefixHeader.pch
+//  LocalBookForSelf
+//
+//  Created by 刘俊彰 on 2018/12/27.
+//  Copyright © 2018 刘俊彰. All rights reserved.
+//
+
+#ifndef LJZ_PrefixHeader_pch
+#define LJZ_PrefixHeader_pch
+
+//三方库
+#import "RNCryptor iOS.h"
+#import "Masonry.h"
+
+//自建类
+#import "CommomClasses.h"
+#import "BaseClasses.h"
+
+//屏幕宽度
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+//屏幕高度
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+
+//调试状态下生效的日志打印
+#ifdef DEBUG
+#   define MyLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#   define MyLog(...)
+#endif
+
+//iPhoneX适配
+#define IOS11_OR_LATER_SPACE(par)\
+({\
+    float space = 0.0;\
+    if (@available(iOS 11.0, *))\
+        space = par;\
+    (space);\
+})
+#define LEON_KEY_WINDOW [UIApplication sharedApplication].keyWindow
+#define LEON_TOP_SPACE IOS11_OR_LATER_SPACE(LEON_KEY_WINDOW.safeAreaInsets.top)
+#define LEON_TOP_ACTIVE_SPACE IOS11_OR_LATER_SPACE(MAX(0, LEON_KEY_WINDOW.safeAreaInsets.top-20))
+#define LEON_BOTTOM_SPACE IOS11_OR_LATER_SPACE(LEON_KEY_WINDOW.safeAreaInsets.bottom)
+
+//色值转换（需要将#换成0x）
+#define UIColorFromRGB(rgbValue) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+//weakSelf & strongSelf
+//#ifndef weakify
+//#if DEBUG
+//#if __has_feature(objc_arc)
+//#define weakify(object) autoreleasepool{} __weak __typeof__(object) weak##_##object = object;
+//#else
+//#define weakify(object) autoreleasepool{} __block __typeof__(object) block##_##object = object;
+//#endif
+//#else
+//#if __has_feature(objc_arc)
+//#define weakify(object) try{} @finally{} {} __weak __typeof__(object) weak##_##object = object;
+//#else
+//#define weakify(object) try{} @finally{} {} __block __typeof__(object) block##_##object = object;
+//#endif
+//#endif
+//#endif
+//
+//#ifndef strongify
+//#if DEBUG
+//#if __has_feature(objc_arc)
+//#define strongify(object) autoreleasepool{} __typeof__(object) object = weak##_##object;
+//#else
+//#define strongify(object) autoreleasepool{} __typeof__(object) object = block##_##object;
+//#endif
+//#else
+//#if __has_feature(objc_arc)
+//#define strongify(object) try{} @finally{} __typeof__(object) object = weak##_##object;
+//#else
+//#define strongify(object) try{} @finally{} __typeof__(object) object = block##_##object;
+//#endif
+//#endif
+//#endif
+
+
+//把NSNull类型的值替换成@""
+#define VerifyValue(value)\
+({id result;\
+if ([value isKindOfClass:[NSNull class]]){\
+result = @"";}\
+else if([value isKindOfClass:[NSDictionary class]]||[value isKindOfClass:[NSArray class]])\
+{result=value;}\
+else if([[NSString stringWithFormat:@"%@",value]isEqualToString:@"(null)"])\
+{result=@"";}\
+else\
+{result = [NSString stringWithFormat:@"%@",value];}\
+result;\
+})\
+
+
+
+
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* LJZ_PrefixHeader_pch */

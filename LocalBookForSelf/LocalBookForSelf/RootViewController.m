@@ -7,17 +7,26 @@
 //
 
 #import "RootViewController.h"
+#import "BaseNavigationViewController.h"
 
 @interface RootViewController ()
 
 @end
 
 @implementation RootViewController
+-(instancetype)init{
+    if (self = [super init]) {
+        [self configurationDefault];
+    }
+    return self;
+}
+- (void)configurationDefault{
+    self.tabBar.translucent = NO;
 
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-
     LeonMainPageVC *homeVC=[[LeonMainPageVC alloc] init];
     [self setTabBarItem:homeVC.tabBarItem
                   title:@"首页"
@@ -40,10 +49,11 @@
 
     
 
-    UINavigationController *homeNV = [[UINavigationController alloc] initWithRootViewController:homeVC];
-    UINavigationController *blogNV = [[UINavigationController alloc] initWithRootViewController:blogVC];
+    BaseNavigationViewController *homeNV = [[BaseNavigationViewController alloc] initWithRootViewController:homeVC];
+    BaseNavigationViewController *blogNV = [[BaseNavigationViewController alloc] initWithRootViewController:blogVC];
     [self setNavigationController:homeNV];
     [self setNavigationController:blogNV];
+
     // 把子控制器添加到UITabBarController
     self.viewControllers = @[homeNV, blogNV];
     
@@ -51,6 +61,9 @@
 }
 - (void)setNavigationController:(UINavigationController *)NavigationVC{
     NavigationVC.navigationBar.barTintColor = UIColorFromRGB(0x151617);
+    NavigationVC.navigationBar.barStyle = UIBarStyleBlack;
+    [NavigationVC.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont boldSystemFontOfSize:20]}];
+//    NavigationVC.navigationBar.translucent = NO;
     
 }
 - (void)setTabBarItem:(UITabBarItem *)tabbarItem
