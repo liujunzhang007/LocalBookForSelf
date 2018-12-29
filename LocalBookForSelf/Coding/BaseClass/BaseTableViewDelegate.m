@@ -26,5 +26,7 @@
     
     return 0;
 }
-
+- (void)updateSearchResultsForSearchController:(UISearchController *)searchController{
+    
+}
 @end

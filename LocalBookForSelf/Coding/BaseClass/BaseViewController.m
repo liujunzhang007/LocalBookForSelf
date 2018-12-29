@@ -37,13 +37,12 @@
 - (void)configurationDefault{
     __weak typeof(self) weakSelf = self;
     _weakSelf = weakSelf;
-//    if (OSVersionIsAtLeastiOS7()) {
-//        if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
-//        {
-//            self.edgesForExtendedLayout = UIRectEdgeNone;
-//        }
-//    }
-    self.edgesForExtendedLayout = UIRectEdgeNone;
+    if(@available(iOS 7.0, *)){
+        if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
+        {
+            self.edgesForExtendedLayout = UIRectEdgeNone;
+        }
+    }
 }
 - (void)viewDidLoad {
     [super viewDidLoad];

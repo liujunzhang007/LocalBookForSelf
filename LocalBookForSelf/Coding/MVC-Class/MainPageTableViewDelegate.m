@@ -33,7 +33,14 @@
 
 -(void)selectorAction:(UITapGestureRecognizer *)tap{
     MyLog(@"selectorAction");
+    UISearchController *search = (LeonBaseSearchController *)self.targetVC;
+    [search addObserver:search forKeyPath:@"active" options:NSKeyValueObservingOptionNew context:nil];
 }
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    NSLog(@"值改变操作");
+}
+
 #pragma mark -
 #pragma mark - UITableViewDelegate
 
@@ -53,7 +60,7 @@
     return rowArr.count;
 }
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    
+
     return dataArray.count;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -134,6 +141,7 @@
 }
 - (void)presentSearchController:(UISearchController *)searchController{
     MyLog(@"presentSearchController");
+
 }
 
 #pragma mark -

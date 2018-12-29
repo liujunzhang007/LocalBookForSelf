@@ -23,9 +23,10 @@
     return self;
 }
 - (void)configuration{
+    self.searchBar.delegate = self;
+
     self.searchBar.barTintColor = [UIColor whiteColor];
     [self.searchBar setImage:[UIImage imageNamed:@"searchController_seachIcon"] forSearchBarIcon:UISearchBarIconSearch state:UIControlStateNormal];
-    self.searchBar.delegate = self;
 //    _searchField = [self getSearchControllerTextField];
 //    _searchField.backgroundColor = UIColorFromRGB(0xe6e8eb);
 //    _searchField.tintColor = [UIColor redColor];
@@ -36,16 +37,13 @@
     [[UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UISearchBar class]]] setTitle:@"Cancel"];
     
     //设置UISearchController的显示属性，以下3个属性默认为YES
-    //搜索时，背景变暗色
-    self.dimsBackgroundDuringPresentation = NO;
-    //搜索时，背景变模糊
+    self.dimsBackgroundDuringPresentation = NO;//搜索时，背景变暗色
     if (@available(iOS 9.1, *)) {
-        self.obscuresBackgroundDuringPresentation = NO;
+        self.obscuresBackgroundDuringPresentation = NO;//搜索时，背景变模糊
     } else {
         // Fallback on earlier versions
     }
-    //隐藏导航栏
-    self.hidesNavigationBarDuringPresentation = NO;
+    self.hidesNavigationBarDuringPresentation = YES;//隐藏导航栏
     
 }
 - (UITextField *)getSearchControllerTextField{
