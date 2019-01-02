@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface LeonBaseSearchController : BaseSearchController
 @property (nonatomic, strong) UITextField *searchField;
 @property (nonatomic, strong) UIButton *searchCancelButton;
+@property (nonatomic, assign) BOOL isActivity;
 @end
 
 NS_ASSUME_NONNULL_END

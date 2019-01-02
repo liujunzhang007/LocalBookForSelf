@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BaseTableView : UITableView
 @property (nonatomic, strong) LeonBaseSearchController *searchController;
+@property (nonatomic, assign) int clickedCount;
+
 - (void)setSearchControllerDelegate:(BaseTableViewDelegate*)delegate;
 @end
 NS_ASSUME_NONNULL_END

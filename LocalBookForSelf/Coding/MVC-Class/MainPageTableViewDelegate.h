@@ -11,7 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MainPageTableViewDelegate : BaseTableViewDelegate
-@property (nonatomic, strong) UIViewController *targetVC;
+@property (nonatomic, copy) void (^clickBlock)(id object);
+@property (nonatomic, copy) void (^didSelectedBlock)(id object);
 @end
 
 NS_ASSUME_NONNULL_END

@@ -11,7 +11,10 @@
 @implementation MainPageTableViewDelegate{
     NSMutableArray *sectionArray;
     NSMutableArray *dataArray;
+    LeonBaseSearchController *leonSearchController;
+//    UIViewController *_targetVC;
 }
+@synthesize targetVC = _targetVC;
 -(instancetype)init{
     if (self = [super init]) {
         dataArray = [[NSMutableArray alloc]init];
@@ -28,18 +31,38 @@
     }
     return self;
 }
+- (void)dealloc{
+    
+    [self removeObserver:self forKeyPath:@"isActivity"];
+    [self removeObserver:self forKeyPath:@"targetVC"];
+}
+#pragma mark -
+#pragma mark - Getter & Setter
+
+- (void)setTargetVC:(UIViewController *)targetVC{
+    [super setTargetVC:targetVC];
+    if (self.targetVC != nil && leonSearchController == nil) {
+        if ([self.targetVC isKindOfClass:[LeonBaseSearchController class]]) {
+            leonSearchController = (LeonBaseSearchController *)self.targetVC;
+            [leonSearchController addObserver:self forKeyPath:@"isActivity" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld|NSKeyValueObservingOptionInitial context:nil];
+            [leonSearchController addObserver:self forKeyPath:@"isActive" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld|NSKeyValueObservingOptionInitial context:nil];
+        }
+    }
+}
+//- (UIViewController *)targetVC{//如果要同事重写setter和getter，需要手动声明成员变量UIViewController *_targetVC
+//    if (_targetVC == nil) {
+//
+//    }
+//    return _targetVC;
+//}
 #pragma mark -
 #pragma mark - ActionMethod
 
 -(void)selectorAction:(UITapGestureRecognizer *)tap{
     MyLog(@"selectorAction");
-    UISearchController *search = (LeonBaseSearchController *)self.targetVC;
-    [search addObserver:search forKeyPath:@"active" options:NSKeyValueObservingOptionNew context:nil];
+
 }
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
-{
-    NSLog(@"值改变操作");
-}
+
 
 #pragma mark -
 #pragma mark - UITableViewDelegate
@@ -116,11 +139,13 @@
     return dict[@"subTitle"];
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (_clickBlock) {
+        _clickBlock(nil);
+    }
     [tableView deselectRowAtIndexPath:indexPath animated:YES];    
 }
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    
+
 }
 
 
@@ -128,20 +153,24 @@
 #pragma mark - UISearchControllerDelegate
 
 - (void)willPresentSearchController:(UISearchController *)searchController{
-    MyLog(@"willPresentSearchController");
+    leonSearchController.isActivity = searchController.active;
+    MyLog(@"willPresentSearchController   %@",leonSearchController.active?@"Yes":@"No");
 }
 - (void)didPresentSearchController:(UISearchController *)searchController{
-    MyLog(@"didPresentSearchController");
+    leonSearchController.isActivity = searchController.active;
+    MyLog(@"didPresentSearchController   %@",leonSearchController.active?@"Yes":@"No");
 }
 - (void)willDismissSearchController:(UISearchController *)searchController{
-    MyLog(@"willDismissSearchController");
+    leonSearchController.isActivity = searchController.active;
+    MyLog(@"willDismissSearchController   %@",leonSearchController.active?@"Yes":@"No");
 }
 - (void)didDismissSearchController:(UISearchController *)searchController{
-    MyLog(@"didDismissSearchController");
+    leonSearchController.isActivity = searchController.active;
+    MyLog(@"didDismissSearchController   %@",leonSearchController.active?@"Yes":@"No");
 }
 - (void)presentSearchController:(UISearchController *)searchController{
-    MyLog(@"presentSearchController");
-
+    leonSearchController.isActivity = searchController.active;
+    MyLog(@"presentSearchController   %@",leonSearchController.active?@"Yes":@"No");
 }
 
 #pragma mark -
@@ -150,4 +179,43 @@
 - (void)updateSearchResultsForSearchController:(UISearchController *)searchController{
     
 }
+#pragma mark -
+#pragma mark - KVO Delegate
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
+//    [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];//让父类也响应回调
+    if ([object isKindOfClass:[LeonBaseSearchController class]]) {
+        if ([keyPath isEqualToString:@"isActivity"]) {
+            if (change[@"new"] != change[@"old"]) {
+                LeonBaseSearchController *searchController = (LeonBaseSearchController *)object;
+                MyLog(@"%@ . isActivity === %@ & ChangeInfo === %@",[object class],searchController.isActivity ? @"YES" : @"NO",change);
+            }
+        }
+    }else if([object isKindOfClass:[BaseTableView class]]){
+        if([keyPath isEqualToString:@"clickedCount"]){
+            MyLog(@"clickedCount changed!!!   clickedCount === %@",change);
+        }
+        
+    }else{
+        if([keyPath isEqualToString:@"isActive"]){
+            LeonBaseSearchController *searchController = (LeonBaseSearchController*)object;
+            MyLog(@"active changed!!!   searchController.active === %@",searchController.active ? @"Yes" : @"No");
+        }
+    }
+}
+- (void)willChangeValueForKey:(NSString *)key{
+    
+}
+- (void)didChangeValueForKey:(NSString *)key{
+    
+}
+//+ (BOOL)automaticallyNotifiesObserversOfClickBlock{
+//    return YES;
+//}
+//+ (BOOL)automaticallyNotifiesObserversOfDidSelectedBlock{
+//    return YES;//如果return NO，则本类的DidSelectedBlock属性禁止被KVO
+//}
+//+ (BOOL)automaticallyNotifiesObserversForKey:(NSString *)key{
+//
+//    return [super automaticallyNotifiesObserversForKey:key];//如果return NO，则本类禁止被KVO
+//}
 @end

@@ -19,15 +19,24 @@
     }
     return self;
 }
+- (instancetype)init{
+    if (self = [super init]) {
+        [self configuration];
+    }
+    return self;
+}
 - (void)configuration{
-
+    self.clickedCount = 0;
 }
 - (void)setSearchControllerDelegate:(BaseTableViewDelegate *)delegate{
     _searchController = [[LeonBaseSearchController alloc]initWithSearchResultsController:nil];
     _searchController.view.frame = self.frame;
-    self.tableHeaderView =_searchController.searchBar;
     _searchController.delegate = delegate;
     _searchController.searchResultsUpdater = delegate;
+    delegate.targetVC = _searchController;
+    self.tableHeaderView =_searchController.searchBar;
+    [self addObserver:delegate forKeyPath:@"clickedCount" options:NSKeyValueObservingOptionOld|NSKeyValueObservingOptionNew context:nil];
+
 }
 /*
 // Only override drawRect: if you perform custom drawing.

@@ -30,6 +30,10 @@
 - (void)configurationUI{
     
     _delegate = [[MainPageTableViewDelegate alloc]init];
+    _delegate.clickBlock = ^(id  _Nonnull object) {
+        self->_tableView.clickedCount += 1;
+    };
+    
     _tableView = [[BaseTableView alloc]init];
     [_tableView setSearchControllerDelegate:_delegate];
     _tableView.delegate = _delegate;

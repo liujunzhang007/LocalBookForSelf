@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BaseTableViewDelegate : NSObject<UITableViewDelegate,UITableViewDataSource,UISearchControllerDelegate,UISearchResultsUpdating>
-
+@property (nonatomic, strong) UIViewController *targetVC;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -62,6 +62,9 @@
     }
     return nil;
 }
+#pragma mark -
+#pragma mark - Getter & Setter
+
 
 #pragma mark -
 #pragma mark - UISearchBarDelegate

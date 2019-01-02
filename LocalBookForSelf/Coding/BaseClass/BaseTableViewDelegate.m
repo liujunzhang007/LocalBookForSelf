@@ -29,4 +29,11 @@
 - (void)updateSearchResultsForSearchController:(UISearchController *)searchController{
     
 }
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
+        if([object isKindOfClass:[BaseTableView class]]){
+        if([keyPath isEqualToString:@"clickedCount"]){
+            MyLog(@"clickedCount changed!!!   clickedCount === %@",change);
+        }
+    }
+}
 @end
