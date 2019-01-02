@@ -40,7 +40,10 @@
 #pragma mark - Getter & Setter
 
 - (void)setTargetVC:(UIViewController *)targetVC{
-    [super setTargetVC:targetVC];
+    if (_targetVC == nil) {
+        _targetVC = targetVC;
+    }
+    [super setTargetVC:_targetVC];
     if (self.targetVC != nil && leonSearchController == nil) {
         if ([self.targetVC isKindOfClass:[LeonBaseSearchController class]]) {
             leonSearchController = (LeonBaseSearchController *)self.targetVC;
@@ -48,6 +51,14 @@
             [leonSearchController addObserver:self forKeyPath:@"isActive" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld|NSKeyValueObservingOptionInitial context:nil];
         }
     }
+
+//    if (_targetVC != nil && leonSearchController == nil) {
+//        if ([_targetVC isKindOfClass:[LeonBaseSearchController class]]) {
+//            leonSearchController = (LeonBaseSearchController *)_targetVC;
+//            [leonSearchController addObserver:self forKeyPath:@"isActivity" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld|NSKeyValueObservingOptionInitial context:nil];
+//            [leonSearchController addObserver:self forKeyPath:@"active" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld|NSKeyValueObservingOptionInitial context:nil];
+//        }
+//    }
 }
 //- (UIViewController *)targetVC{//如果要同事重写setter和getter，需要手动声明成员变量UIViewController *_targetVC
 //    if (_targetVC == nil) {
@@ -184,22 +195,23 @@
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
 //    [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];//让父类也响应回调
     if ([object isKindOfClass:[LeonBaseSearchController class]]) {
-        if ([keyPath isEqualToString:@"isActivity"]) {
+        if([keyPath isEqualToString:@"isActivity"]) {
             if (change[@"new"] != change[@"old"]) {
                 LeonBaseSearchController *searchController = (LeonBaseSearchController *)object;
                 MyLog(@"%@ . isActivity === %@ & ChangeInfo === %@",[object class],searchController.isActivity ? @"YES" : @"NO",change);
             }
         }
+        if([keyPath isEqualToString:@"active"]){
+            LeonBaseSearchController *searchController = (LeonBaseSearchController*)object;
+            MyLog(@"active changed!!!   searchController.active === %@",searchController.active ? @"Yes" : @"No");
+        }
     }else if([object isKindOfClass:[BaseTableView class]]){
         if([keyPath isEqualToString:@"clickedCount"]){
             MyLog(@"clickedCount changed!!!   clickedCount === %@",change);
         }
-        
     }else{
-        if([keyPath isEqualToString:@"isActive"]){
-            LeonBaseSearchController *searchController = (LeonBaseSearchController*)object;
-            MyLog(@"active changed!!!   searchController.active === %@",searchController.active ? @"Yes" : @"No");
-        }
+
+        
     }
 }
 - (void)willChangeValueForKey:(NSString *)key{
@@ -208,14 +220,14 @@
 - (void)didChangeValueForKey:(NSString *)key{
     
 }
-//+ (BOOL)automaticallyNotifiesObserversOfClickBlock{
-//    return YES;
-//}
-//+ (BOOL)automaticallyNotifiesObserversOfDidSelectedBlock{
-//    return YES;//如果return NO，则本类的DidSelectedBlock属性禁止被KVO
-//}
-//+ (BOOL)automaticallyNotifiesObserversForKey:(NSString *)key{
-//
-//    return [super automaticallyNotifiesObserversForKey:key];//如果return NO，则本类禁止被KVO
-//}
++ (BOOL)automaticallyNotifiesObserversOfClickBlock{
+    return YES;
+}
++ (BOOL)automaticallyNotifiesObserversOfDidSelectedBlock{
+    return YES;//如果return NO，则本类的DidSelectedBlock属性禁止被KVO
+}
++ (BOOL)automaticallyNotifiesObserversForKey:(NSString *)key{
+
+    return [super automaticallyNotifiesObserversForKey:key];//如果return NO，则本类禁止被KVO
+}
 @end
